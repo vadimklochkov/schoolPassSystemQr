@@ -18,8 +18,7 @@ class PassController extends Controller
             $pass->email = $req->input('email');
             $pass->type = $req->input('type');
             $pass->image = $path;
-            $token = md5(rand(-999999999999999999, 999999999999999999)). md5(rand(-999999999999999999, 999999999999999999)). md5(rand(-999999999999999999, 999999999999999999));
-            $token = md5($token);
+            $token = md5(rand(-2147483648, 2147483648)). md5(rand(-2147483648, 2147483648)). md5(rand(-2147483648, 2147483648));            $token = md5($token);
             $pass->token = $token;
             $pass->status = 'Ожидание';
             $pass->save();
@@ -37,8 +36,7 @@ class PassController extends Controller
         $pass->date2 = $date2;
         $pass->comm = $req->input('comm');
         $pass->image = $req->input('image');
-        $token = md5(rand(-999999999999999999, 999999999999999999)). md5(rand(-999999999999999999, 999999999999999999)). md5(rand(-999999999999999999, 999999999999999999));
-        $token = md5($token);
+        $token = md5(rand(-2147483648, 2147483648)). md5(rand(-2147483648, 2147483648)). md5(rand(-2147483648, 2147483648));            $token = md5($token);
         $pass->token = $token;
         $pass->status = 'Ожидание';
         $pass->save();
