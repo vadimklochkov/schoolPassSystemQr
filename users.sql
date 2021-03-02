@@ -1,0 +1,3 @@
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Оператор', 'operator', NULL, '$2y$10$3giYeGDFzwIvAU18YeZp4OJMtO0FHWelrkCycSNXPUT1xxm2DVxwa', 'oper', NULL, '2021-02-26 05:01:16', '2021-02-26 05:01:16'),
+(2, 'Администратор', 'admin', NULL, '$2y$10$NL8GxlbiITskOCp9k/h9W.xH.5II5NwLqVqmsb20d3hQrziGfPLYq', 'admin', NULL, '2021-02-26 05:02:27', '2021-02-26 05:02:27');
