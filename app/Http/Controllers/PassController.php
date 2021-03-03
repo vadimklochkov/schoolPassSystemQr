@@ -50,7 +50,7 @@ class PassController extends Controller
     }
     public function getPassId($id){
         $pass = new Pass();
-        $pass = $pass->where('token', '=', $id)->where('status', '=', 'Одобрено')->get();
+        $pass = $pass->where('token', '=', $id)->get();
         $qr = "127.0.0.1:8000/pass/" . $id;
         return view('youPass', ['pass' => $pass], ['qr' => $qr]);
     }

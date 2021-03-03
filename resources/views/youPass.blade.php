@@ -16,6 +16,17 @@
 
 <div class="col-5">
 <h5>Ваш пропуск</h5>
+@if($el->status == 'Ожидание')
+<div class="alert alert-warning" role="alert">
+  Статус вашего пропуск ОЖИДАНИЕ
+</div>
+@endif
+@if($el->status == 'Отклонено')
+<div class="alert alert-danger" role="alert">
+  Статус вашего пропуск Отклонено
+</div>
+@endif
+
 <div class="card">
     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 340.03 573">
@@ -324,4 +335,6 @@
 @endforeach
 
 </div></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 @endsection
